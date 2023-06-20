@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ToDoList</title>
+        <link rel="stylesheet" type="text/css" href="TODO.CSS">
+    </head>
+    <body>
+        <div class="container">
+<div class="todo-app">
+        <h1>To-Do List</h1>
+        <!--This is for the user writing and adding notes.-->
+        <div class="row">
+        <input type="text" id="input-box" background color="red" placeholder="Add an item!" style="height: 30px; width: 700px";>
+        <button id="sub" onclick = "addTask()" style="height: 30px; width: 100px">Submit</button>
+        <button id="clear" style="height: 30px; width: 100px">Clear All</button>
+    </div>
+</div>
+<!--And these are the written notes in an ordered list.-->
+         <ol id="list-container">
+    </ol>
+</div>
+
+<script type="text/javascript" src="TODO.JS"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" type="text/css" href="ExpenseTracker.css">
+    </head>
+    <body>
+        <div id="overall" >
+    <h1>Expense Tracker</h1>
+    <h2>Add an item:</h2>
+<div class="input"><label>Name:   </label><input id="input-name" type="text" placeholder="Where was the location of purchase?" style="height: 30px; width: 2200px";></div>
+<div class="input"><label>Date:   </label><input id="input-date" type="date" style="height: 30px; width: 1050px";></div>
+<div class="input"><label>Amount:   </label><input id="input-amount" type="text" style="height: 30px; width: 1050px";></div>
+<div id="input-expense"><button style="height: 35px; width: 100px">Add Expense</button>
+</div>
+<table id="new-expense">
+        <tr>
+            <th>Name:</th>
+            <th>Date:</th>
+            <th>Amount:</th>
+            <th style="width: 150px;"></th>
+        </tr>
+        <tr>
+            <th  id="placeholder" type="reset" colspan="4">No expenses added yet!</th>
+        </tr>
+    </table>
+        
+<script type="text/javascript" src="ExpenseTracker.js"></script>
+</body>
+</html>

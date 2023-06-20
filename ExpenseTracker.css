@@ -1,0 +1,97 @@
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    body {
+      background-color: lightgray;
+    }
+  }
+
+#overall {
+    position: fixed;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    color: black;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    padding-top: 0px;
+    font-size: 60px;
+    color: rgb(17, 179, 17);
+}
+
+label {
+    font-size: 30px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+}
+
+#input-name {
+    align-items: center;
+}
+
+#input-date {
+display: inline-block;
+padding-top: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#input-amount {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input-expense {
+    text-align: center; 
+    padding-top: 30px; 
+    
+}
+
+
+#add-expense {
+   background-color: rgb(17, 179, 17);
+   border: 0px;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+}
+
+table {
+    width: 90%;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: 1px solid rgb(223, 220, 220);
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid rgb(223, 220, 220);
+    font-weight: bold;
+    background-color: rgb(243, 243, 243);
+}
+
+#new-expense { line-height: 40px; }
+
+button {
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    background-color: rgb(17, 179, 17);
+    border-radius: 5px;
+    color: white;
+}
+
+#placeholder {
+     display: table-cell;
+     visibility: visible;
+}

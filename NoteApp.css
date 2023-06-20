@@ -1,0 +1,74 @@
+html,body {
+    margin:0;
+    padding:0;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#container { 
+    overflow: hidden;
+}
+
+h1 {
+    color: orange;
+    font-size: 80px;
+    padding-left: 50px;
+    padding-top: none;
+    margin-top: none;
+}
+
+textarea {
+    padding-left: 20px;
+    padding-right: 20px;
+    resize: none;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    resize: none;
+    min-height: 100px;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100px;
+    width: 100%;
+    border-width: thick;
+    border-color: rgb(255, 255, 255);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.list-reduce {
+    max-height: 100px;
+}
+
+/* this made the scrollbar invisible!*/
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#add-note {
+    background-color: rgb(32, 32, 32);
+    color: orange;
+    width: 100%;
+    height: 100px;
+    /*something to do with position!*/
+    position: relative;
+    bottom: 0;
+}
+
+h2{
+    cursor: pointer;
+    font-size: 50px;
+    padding-left: 30px;
+    position: absolute;
+    padding-top: 0px;
+    margin-top: 15px;
+}
