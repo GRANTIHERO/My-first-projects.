@@ -18,12 +18,22 @@ function addTask() {
     delButton.textContent = "Delete";
 
     // Click event for delete button:
-    delButton.addEventListener("click", function() {
+    delButton.addEventListener("click", function () {
       var currentRow = this.parentNode;
       currentRow.parentNode.removeChild(currentRow);
     });
-  }
 
+    // Function for Save button showing.
+    let saveButton = document.createElement("button");
+    li.append(saveButton);
+    saveButton.textContent = "Save";
+
+    // Click event for save button:
+    saveButton.addEventListener("click", function () {
+      var storedItem = localStorage.getItem(storedItem);
+      localStorage.setItem("storedItem", currentRow);
+    });
+  }
   inputBox.value = "";
 }
 
