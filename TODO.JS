@@ -30,10 +30,12 @@ function addTask() {
 
     // Click event for save button:
     saveButton.addEventListener("click", function () {
-      var storedItem = localStorage.getItem(storedItem);
-      localStorage.setItem("storedItem", currentRow);
+      localStorage.setItem("value", listContainer.innerHTML);
+      console.log(localStorage.getItem("value"));
+      //listContainer.innerHTML = localStorage.getItem("value");
     });
   }
+
   inputBox.value = "";
 }
 
