@@ -33,8 +33,14 @@ function addTask() {
 
     // Click event for save button:
     saveButton.addEventListener("click", function () {
-      localStorage.setItem("value", listContainer.innerHTML);
-      console.log(localStorage.getItem("value"));
+      var currentRow = this.parentNode;
+      var savedItems = localStorage.getItem("value");
+      if (savedItems) {
+        savedItems += currentRow.outerHTML;
+      } else {
+        savedItems = currentRow.outerHTML;
+      }
+      localStorage.setItem("value", savedItems);
     });
   }
 
