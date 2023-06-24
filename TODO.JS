@@ -21,6 +21,9 @@ function addTask() {
     delButton.addEventListener("click", function () {
       var currentRow = this.parentNode;
       currentRow.parentNode.removeChild(currentRow);
+      // Remove the item from local storage
+      localStorage.setItem("value", listContainer.innerHTML);
+      localStorage.removeItem("savedItem");
     });
 
     // Function for Save button showing.
@@ -32,7 +35,6 @@ function addTask() {
     saveButton.addEventListener("click", function () {
       localStorage.setItem("value", listContainer.innerHTML);
       console.log(localStorage.getItem("value"));
-      //listContainer.innerHTML = localStorage.getItem("value");
     });
   }
 
@@ -42,4 +44,23 @@ function addTask() {
 // Code for Clear All button.
 clearAll.addEventListener("click", () => {
   inputBox.value = "";
+});
+
+// Restore saved list from local storage
+window.addEventListener("load", function () {
+  const savedValue = localStorage.getItem("value");
+  if (savedValue) {
+    listContainer.innerHTML = savedValue;
+
+    // Reattach event listeners to delete buttons
+    const deleteButtons = document.querySelectorAll("li button");
+    deleteButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        var currentRow = this.parentNode;
+        currentRow.parentNode.removeChild(currentRow);
+        localStorage.setItem("value", listContainer.innerHTML);
+        localStorage.removeItem("savedItem");
+      });
+    });
+  }
 });
